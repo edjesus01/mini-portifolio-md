@@ -1,5 +1,5 @@
 body {
-  background-image: url(../imagens/fundo-site.jpg);
+  background-image: url(../imagens/fundo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -7,6 +7,7 @@ body {
   font-family: 'VT323', monospace;
   color: #f3f3f3;
   font-size: 18px;
+  -webkit-text-stroke-width: -4px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,11 +16,12 @@ body {
 }
 
 .cartao {
-  background-color: #070d12;
+  background-color: #2e2f30;
   width: 370px;
-  border: 2px solid #e126d9;
+  border: 2px solid #3b57f4;
   border-radius: 10px;
   overflow: hidden;
+  opacity: 0.6;
 }
 
 .cartao .minhas-informacoes {
@@ -32,16 +34,18 @@ body {
 
 .cartao .minhas-informacoes img {
   border-radius: 50px;
-  border: 3px solid #02d08f;
+  border: 3px solid #3b57f4;
 }
 
 .cartao .minhas-informacoes .nome {
   font-size: 26px;
+  -webkit-text-stroke-width: -4px;
 }
 
 .cartao .minhas-informacoes .cargo {
   font-size: 20px;
-  color: #b8bbc5;
+  color: #a7aec4;
+  -webkit-text-stroke-width: -4px;
 }
 
 .cartao .conteudo {
@@ -89,19 +93,21 @@ body {
 
 .informacoes-abas .sub-titulo {
   font-size: 22px;
+  -webkit-text-stroke-width: -4px;
   margin-bottom: 25px;
   text-align: center;
 }
 
 .informacoes-abas .descricao {
   font-size: 20px;
+  -webkit-text-stroke-width: -4px;
   max-height: 180px;
   overflow-y: auto;
   padding-right: 15px;
 }
 
 .informacoes-abas .informacao span {
-  color: #02d08f;
+  color: #3b38f5;
 }
 
 .redes-sociais {
@@ -119,6 +125,7 @@ body {
   color: #f3f3f3;
   text-align: center;
   font-size: 20px;
+  -webkit-text-stroke-width: -4px;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -136,4 +143,10 @@ body {
 
 .redes-sociais .github {
   background-color: #545454;
+}
+
+.aba img {
+  filter: invert(40%);
+  filter: brightness(4);
+  filter: saturate(100%);
 }
